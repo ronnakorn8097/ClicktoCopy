@@ -7,7 +7,7 @@ const coupon = document.querySelector(".coupon")
 btn.addEventListener("click",(e)=>{
     coupon.select() // เมื่อกดปุ่ม มันจะเอาค่า value ที่ทำการจัดเต็ม value ไว้
     coupon.setSelectionRange(0,9999) // คัดลอกข้อความ ที่อยู่ในตัวแปร coupon ที่เก็บ value FLASHSALE2022
-    navigator.clipboard.writeText(coupon.value) // 
+    navigator.clipboard.writeText(coupon.value) // copy ข้อความ
     btn.textContent = "คัดลอกคูปองสำเร็จ" // ปุ่มจะเปลี่ยนข้อความ
 
     // เมื่อกดปุ่มคัดลอกเสร็จจะให้ปุ่มกลับไปเป็นค่าเริ่มต้น 
